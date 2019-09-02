@@ -4,7 +4,7 @@
 
 [Creational Design Patterns](#creational-design-patterns)
 - [Singleton Pattern](#singleton-pattern)
-- Factory Pattern
+- [Factory Pattern](#factory-pattern)
 - Abstract Factory Pattern
 - Builder Pattern
 - Prototype Pattern
@@ -35,9 +35,12 @@
 
 ### Creational Design Patterns
 Creational design patterns provide solution to instantiate a object in the best possible way for specific situations
-#### Singleton-Pattern
+#### Singleton Pattern
 To implement a Singleton pattern, we have different approaches but all of them have the following common concepts.
 
 - Private constructor to restrict instantiation of the class from other classes.
 - Private static variable of the same class that is the only instance of the class.
 - Public static method that returns the instance of the class, this is the global access point for outer world to get the instance of the singleton class.
+
+#### Factory Pattern
+Factory design pattern is used when we have a super class with multiple sub-classes and based on input, we need to return one of the sub-class. This pattern take out the responsibility of instantiation of a class from client program to the factory class
