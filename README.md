@@ -2,9 +2,8 @@
 
 **Java Design Patterns are divided into three categories – creational, structural, and behavioral design patterns. This post serves as an index for all the java design patterns articles I have written so far.**
 
-
-[Creational Design Patterns]("#Creational-Design-Patterns")
-- [Singleton Pattern]("###Singleton-Pattern")
+[Creational Design Patterns](#creational-design-patterns)
+- [Singleton Pattern](#singleton-pattern)
 - Factory Pattern
 - Abstract Factory Pattern
 - Builder Pattern
@@ -34,6 +33,11 @@
 - Dependency Injection Pattern
 - MVC Pattern
 
-# Creational Design Patterns
+### Creational Design Patterns
 Creational design patterns provide solution to instantiate a object in the best possible way for specific situations
-### Singleton-Pattern
+#### Singleton-Pattern
+To implement a Singleton pattern, we have different approaches but all of them have the following common concepts.
+
+- Private constructor to restrict instantiation of the class from other classes.
+- Private static variable of the same class that is the only instance of the class.
+- Public static method that returns the instance of the class, this is the global access point for outer world to get the instance of the singleton class.
